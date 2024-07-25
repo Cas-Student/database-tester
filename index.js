@@ -8,5 +8,6 @@ var con = mysql.createConnection({
 
 con.connect(function(err) {
     if (err) throw err;
+    console.log("Connected!");
     document.getElementById("output").innerText = "Connected!";
 })
